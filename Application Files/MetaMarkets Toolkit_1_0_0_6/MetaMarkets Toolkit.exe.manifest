@@ -1,0 +1,3801 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="MetaMarkets Toolkit.exe" version="1.0.0.6" publicKeyToken="87b9fbfba03c9e7f" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="MetaMarketlogo-removebg-preview.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="MetaMarkets Toolkit" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="MetaMarkets Toolkit.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Avalonia.dll" size="4096">
+      <assemblyIdentity name="Avalonia" version="11.3.7.0" publicKeyToken="C8D484A7012F9A8B" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>SjZb/+TwYNO59QerfhJ8HAEvOnu+ixlu693Kpv0zNpI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Avalonia.Base.dll" size="2117632">
+      <assemblyIdentity name="Avalonia.Base" version="11.3.7.0" publicKeyToken="C8D484A7012F9A8B" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>GCpXMgHNBCZeegw24epqcPQI24dO1ZLNA3QO6kjAgKg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Avalonia.Controls.dll" size="1079296">
+      <assemblyIdentity name="Avalonia.Controls" version="11.3.7.0" publicKeyToken="C8D484A7012F9A8B" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>DUMUE23H0esvkg8rn9lw/6ibxGTM34W+vRxme42UBps=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Avalonia.Controls.ColorPicker.dll" size="482816">
+      <assemblyIdentity name="Avalonia.Controls.ColorPicker" version="11.3.7.0" publicKeyToken="C8D484A7012F9A8B" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ddO/XzU9jyicUnJFWJTbU6fDEiflou3t+b6gdAz60LA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Avalonia.Controls.DataGrid.dll" size="367104">
+      <assemblyIdentity name="Avalonia.Controls.DataGrid" version="11.3.7.0" publicKeyToken="C8D484A7012F9A8B" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>FWBggoRRaddbdRwxNtF9jurhGc420rnQoU5wfNUrGU8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Avalonia.DesignerSupport.dll" size="209920">
+      <assemblyIdentity name="Avalonia.DesignerSupport" version="0.7.0.0" publicKeyToken="C8D484A7012F9A8B" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>R5MmuqsUQkRa9oqVfLfnvg3EsBWIo5faf737UCQq5wA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Avalonia.Dialogs.dll" size="243200">
+      <assemblyIdentity name="Avalonia.Dialogs" version="11.3.7.0" publicKeyToken="C8D484A7012F9A8B" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>WqmL6QzP/+Ic5BJmFXBbCdqYnfM2r77HqajNh/Gd5UI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Avalonia.Markup.dll" size="65024">
+      <assemblyIdentity name="Avalonia.Markup" version="11.3.7.0" publicKeyToken="C8D484A7012F9A8B" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>/x5/MS/HlWoIRsvk1rhzwhJbbQsnvM1ywzTXIF8BCVY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Avalonia.Markup.Xaml.dll" size="84480">
+      <assemblyIdentity name="Avalonia.Markup.Xaml" version="11.3.7.0" publicKeyToken="C8D484A7012F9A8B" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>zYsgYbIDiRT4wHDZwu7GXK71VU5k6jzt77/ioVNFrvc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Avalonia.Metal.dll" size="15872">
+      <assemblyIdentity name="Avalonia.Metal" version="11.3.7.0" publicKeyToken="C8D484A7012F9A8B" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>C6xUfFuJvTMWFpD3DxBnvFVPY2qS/9sfueQ1PSo1wlo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Avalonia.MicroCom.dll" size="15872">
+      <assemblyIdentity name="Avalonia.MicroCom" version="11.3.7.0" publicKeyToken="C8D484A7012F9A8B" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>4zo2l0u45zAPzHle3BzZsKS+DShiol9c7cn2RMpGjuQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Avalonia.OpenGL.dll" size="117248">
+      <assemblyIdentity name="Avalonia.OpenGL" version="11.3.7.0" publicKeyToken="C8D484A7012F9A8B" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>dvG4v83Z9qswgS2YwWBG7r4xx4ds71CaQhjLtOuk6/E=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Avalonia.Remote.Protocol.dll" size="72704">
+      <assemblyIdentity name="Avalonia.Remote.Protocol" version="11.3.7.0" publicKeyToken="7ECDE292C616A9F3" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>TXM3v5alQ9hfhQgap++SmstU/WEf/XHd3zi6D3H2tLI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Avalonia.Vulkan.dll" size="191488">
+      <assemblyIdentity name="Avalonia.Vulkan" version="11.3.7.0" publicKeyToken="C8D484A7012F9A8B" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>jNtUkByQd/Th3uRL5b5wxwSvHqEy4obwaGviPXpcTLU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AvaloniaEdit.dll" size="671232">
+      <assemblyIdentity name="AvaloniaEdit" version="11.0.6.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>DYYREiu+Lw7b76PoefQi+N5Q+2elJBl3rCncCQoL+ds=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Dock.Avalonia.dll" size="130048">
+      <assemblyIdentity name="Dock.Avalonia" version="11.3.2.0" publicKeyToken="535DD7FB7A6CF113" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>XgCI/R39gaidtf6cktzPcKUhrFIkLV6DCu1Nl3IvXpc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Dock.Controls.ProportionalStackPanel.dll" size="44032">
+      <assemblyIdentity name="Dock.Controls.ProportionalStackPanel" version="11.3.2.0" publicKeyToken="535DD7FB7A6CF113" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>zmyHts4RrXjPA5qQRbM08PYcTLinh6zjU1S2fw2Hrro=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Dock.Controls.Recycling.dll" size="15872">
+      <assemblyIdentity name="Dock.Controls.Recycling" version="11.3.2.0" publicKeyToken="535DD7FB7A6CF113" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>LhaOvvpyvLcYMvl8JrFIEG73dBCJNelCQrqb3cNOuUc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Dock.Controls.Recycling.Model.dll" size="11264">
+      <assemblyIdentity name="Dock.Controls.Recycling.Model" version="11.3.2.0" publicKeyToken="535DD7FB7A6CF113" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>kODgQs7UJzcibU35wLBjsMaGrUrpG+5fV4+naLFSnxE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Dock.MarkupExtension.dll" size="13312">
+      <assemblyIdentity name="Dock.MarkupExtension" version="11.3.2.0" publicKeyToken="535DD7FB7A6CF113" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>EATKYRPcaMSu7QAgsSq97kl63swHbJT2/8897RmAbq0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Dock.Model.dll" size="104448">
+      <assemblyIdentity name="Dock.Model" version="11.3.2.0" publicKeyToken="535DD7FB7A6CF113" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>buKyvDR4W3Gvyl5fiHNYKUBh7BTrELmS36DoK0fI5HA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Dock.Settings.dll" size="18432">
+      <assemblyIdentity name="Dock.Settings" version="11.3.2.0" publicKeyToken="535DD7FB7A6CF113" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Itnk82KbGEbpn7bs7ShA4UgzfWTdhgod714L0T5IX9w=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Guna.UI2.dll" size="2190720">
+      <assemblyIdentity name="Guna.UI2" version="2.0.4.7" publicKeyToken="8B9D14AA5142E261" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>bYdrJXqXmV0hByrNRFgGM0aFFhIRRcwhgnftwY+XEDA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HtmlAgilityPack.dll" size="172544">
+      <assemblyIdentity name="HtmlAgilityPack" version="1.12.4.0" publicKeyToken="BD319B19EAF3B43A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>MrDAXOSDVEmasR3qfLt923BegcWUFf7itlvZizBlIWQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Krypton.dll" size="29696">
+      <assemblyIdentity name="Krypton" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Y8U9PVEU1J0nLshWTyNTixxHvMr8PI3dw9KWmKt3jeY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Krypton.Navigator.dll" size="473088">
+      <assemblyIdentity name="Krypton.Navigator" version="95.25.8.235" publicKeyToken="A87E673E9ECB6E8E" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>5zkR6Rrc4hETGBa9HcCZuUGjttH20WoyzbOMPoyaWXs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Krypton.Toolkit.dll" size="7908864">
+      <assemblyIdentity name="Krypton.Toolkit" version="95.25.8.235" publicKeyToken="A87E673E9ECB6E8E" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>PD6zvZgyObYe+Ed5mu2yS4JCqVrV+PV0181M44dZwRY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MaterialSkin.dll" size="587776">
+      <assemblyIdentity name="MaterialSkin" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>uYed8V6CxS6RZscfexd8V71MgomCGmWp0/Uiiz9ga04=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MetaMarkets Toolkit.exe" size="214496">
+      <assemblyIdentity name="MetaMarkets Toolkit" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>aiyB7wkYktwrDFRMYY9niFQfSSrHPjHrUyLDaQvdJUc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MetroFramework.dll" size="152576">
+      <assemblyIdentity name="MetroFramework" version="1.2.0.3" publicKeyToken="5F91A84759BF584A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>uvMm9S05FV1yJGWUf0zGfm6Qz9D4mVTquVlWjpvDQqo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MetroFramework.Fonts.dll" size="672256">
+      <assemblyIdentity name="MetroFramework.Fonts" version="1.2.0.3" publicKeyToken="5F91A84759BF584A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>6WAw/dr354QBVn7oJICtde5I01VhmaP4XA7Gae2sLvQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MicroCom.Runtime.dll" size="14336">
+      <assemblyIdentity name="MicroCom.Runtime" version="0.11.0.0" publicKeyToken="B30BE05A5F7688E9" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>6ZLxQHR27HaRq2/hXjI5/ZuIf+U/LhnHlGT1lOpmfKE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Bcl.AsyncInterfaces.dll" size="26904">
+      <assemblyIdentity name="Microsoft.Bcl.AsyncInterfaces" version="8.0.0.0" publicKeyToken="CC7B13FFCD2DDD51" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>gGeCA70CA6ZZT04zCyJUPA3lBZOCuxyTNLeGi48xsbw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Playwright.dll" size="972320">
+      <assemblyIdentity name="Microsoft.Playwright" version="1.55.0.0" publicKeyToken="DB12F80F85D8BA23" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>/fDTYTD105ZNKyp3hawsrp/+0W8H+/xkQbyycZWyaBk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Notifications.Wpf.dll" size="25088">
+      <assemblyIdentity name="Notifications.Wpf" version="0.1.1.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Jr9FjqltCeeNmsEgDSFW2eYg4P7BvaLn6sawXGLrJnc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Semi.Avalonia.dll" size="1505792">
+      <assemblyIdentity name="Semi.Avalonia" version="11.3.7.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>N8Lwl2VRjWDzIN8nm9hWrlgjrOJFkkOLH5Y5UAi3TOc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Semi.Avalonia.AvaloniaEdit.dll" size="76800">
+      <assemblyIdentity name="Semi.Avalonia.AvaloniaEdit" version="11.2.0.1" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>X9z31LltJHx9d4IOe6M+fYRs0Usf14L5HZaFK79dt94=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Semi.Avalonia.ColorPicker.dll" size="127488">
+      <assemblyIdentity name="Semi.Avalonia.ColorPicker" version="11.3.7.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>2dH/cGmvUOPIcYjA17V+jisCqvqtdojvKqG+4P1W77w=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Semi.Avalonia.DataGrid.dll" size="60416">
+      <assemblyIdentity name="Semi.Avalonia.DataGrid" version="11.3.7.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>87xgIJE5/7xBHLCUcxvC9IAhsLWPtd9jfJPlsQg9l8U=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Semi.Avalonia.Dock.dll" size="276992">
+      <assemblyIdentity name="Semi.Avalonia.Dock" version="11.3.2.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>uGXCO4ra1ZL0F1vjl9nJ63OfRbC1CUoTxoI6Q9gnv9U=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Buffers.dll" size="20856">
+      <assemblyIdentity name="System.Buffers" version="4.0.3.0" publicKeyToken="CC7B13FFCD2DDD51" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>rMzPvkXZ8I/+7ZkW43sz6YxlvgEs//bn+ntnIQzh/vs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Collections.Immutable.dll" size="180088">
+      <assemblyIdentity name="System.Collections.Immutable" version="1.2.4.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>vfC+QnEBXoNYiTCBBGm2F6Jc2PqKLPmHLg0tDpeSuH4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.ComponentModel.Annotations.dll" size="43152">
+      <assemblyIdentity name="System.ComponentModel.Annotations" version="4.2.1.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>BBE8hUkYVRnzICeQzrI99glkSHK5wkmlbSvPWVZhAsQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Diagnostics.DiagnosticSource.dll" size="189104">
+      <assemblyIdentity name="System.Diagnostics.DiagnosticSource" version="8.0.0.1" publicKeyToken="CC7B13FFCD2DDD51" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>GIdZJhX8CLvJGtYjB8jBHfwUxFvxINJx1mvkoNGhSac=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Memory.dll" size="142240">
+      <assemblyIdentity name="System.Memory" version="4.0.1.2" publicKeyToken="CC7B13FFCD2DDD51" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>vz+4RmT0CX8aipvHGlHc+M8akF1AgKTSkNoXMIZuhW8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Numerics.Vectors.dll" size="115856">
+      <assemblyIdentity name="System.Numerics.Vectors" version="4.1.4.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>HT74aYKB589zcdFVSv71hys5+Wwm2nciEKM9oEG6EYM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Runtime.CompilerServices.Unsafe.dll" size="18024">
+      <assemblyIdentity name="System.Runtime.CompilerServices.Unsafe" version="6.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>N3aEiOjvRXKbx9miZ3YzxkUAQpdbuWUW4YbabLnNDc8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Text.Encodings.Web.dll" size="79024">
+      <assemblyIdentity name="System.Text.Encodings.Web" version="8.0.0.0" publicKeyToken="CC7B13FFCD2DDD51" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>6cT17tGGyxKcUnxLjWfRY+ovI5bp2LluMLXnwSIDzoQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Text.Json.dll" size="644888">
+      <assemblyIdentity name="System.Text.Json" version="8.0.0.5" publicKeyToken="CC7B13FFCD2DDD51" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>hsPyY66bRGmrEmbIBHEIcIJEfrSjjmuXv16E3hXAeh0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Threading.Tasks.Extensions.dll" size="25984">
+      <assemblyIdentity name="System.Threading.Tasks.Extensions" version="4.2.0.1" publicKeyToken="CC7B13FFCD2DDD51" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>T4H/0NxyBNt1r8NepCkXabB8RAWS8oiUJg7qdmJqI8Y=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.ValueTuple.dll" size="25232">
+      <assemblyIdentity name="System.ValueTuple" version="4.0.3.0" publicKeyToken="CC7B13FFCD2DDD51" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>6QXRAlhbIsbfBPIZr1y9v6e8Fll56XiLYt9tzBZeEPQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WebDriver.dll" size="6119936">
+      <assemblyIdentity name="WebDriver" version="4.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ErBNca3/52s3jgmzOtjiNFXJTe/J50We1RqNcZqdEdM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name=".playwright\node\LICENSE" size="142077">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>3o99CLFkpbBdgVzv3NszLTiEY3lkm1OVYHFSL2Ol53c=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\node\win32_x64\node.exe" size="85202416">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>wi0cWaH3Z6HtAXhEWgJ/IlfTGMVUMPyBnUjyaVhoIrc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\api.json" size="2859573">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>KlV70NvWA+fUsmYN0Mhv6aZlMdFoQYsSsnIrQwXq40M=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\bin\install_media_pack.ps1" size="174">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>vCDwSbrfAh46U720FWYDyqXvSCyamiUfknYF5nakQXE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\bin\reinstall_chrome_beta_linux.sh" size="1214">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>FRb9Nt70S/z4eFWFAyKlTjsm6GOoL73ypEpfUTT37t8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\bin\reinstall_chrome_beta_mac.sh" size="563">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>jS1YDwmlozcIlSYxWZ+hjG5QoU96jhkWHJHbJaqrd/o=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\bin\reinstall_chrome_beta_win.ps1" size="957">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ttnkR0L+r7mNXtxW+iAEKUmXPPMNFBocW0+zhAlpZ8U=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\bin\reinstall_chrome_stable_linux.sh" size="1209">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>i1eLqhbyhvF9ainMiZinoW8mNbf7AY+Uc9XEmOC+RQ8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\bin\reinstall_chrome_stable_mac.sh" size="519">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>BzlQC63aP6GVPfxLf+WVHB2H0GyXyNRvPPJxRLx4obg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\bin\reinstall_chrome_stable_win.ps1" size="923">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>PZbE4vTruz+tRM87pY2c+Qrxyfswc+OyfUWnTPAFUVs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\bin\reinstall_msedge_beta_linux.sh" size="1491">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>UKX7SCEc4NxSThfhhUf0DoY8FzJVXKKIy8ac1stVrio=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\bin\reinstall_msedge_beta_mac.sh" size="377">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>VWJcxakr6jwNJuL5zUypbxLPnbwQh5SV88sp5SIouRM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\bin\reinstall_msedge_beta_win.ps1" size="874">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>sXPDeKWfDMOAM87nAt4fRPCSdsmyJw0aZQ6+Zu4xJDM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\bin\reinstall_msedge_dev_linux.sh" size="1486">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>OOdMKsikA8USWQ0R0gdCdz0zjYtosCAisgmp2KbgPXw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\bin\reinstall_msedge_dev_mac.sh" size="372">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>1tDzZ7nakLOHcovWGcw2yFkc+AgeIth1HK0bZyuN7ek=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\bin\reinstall_msedge_dev_win.ps1" size="869">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Rvf5jIHLCr5ofX9KWv6puJejjSpt1vZmL72Ef3oivVE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\bin\reinstall_msedge_stable_linux.sh" size="1504">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>2y+zSSponuVHLsFZ/val77emLx9RMzk1CBPJ0TNLqNI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\bin\reinstall_msedge_stable_mac.sh" size="371">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>1hzhkGMSryKtXmYuFTa7Re8pkVQ8JnosGuO7kpPTei0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\bin\reinstall_msedge_stable_win.ps1" size="856">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>QLtfy/zru+LOQ8bnNufF3u/FvgO26caRRCPAbsH1kb4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\browsers.json" size="1857">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ajRtgCVD6EXF55cVuZ1Y/Cu/WPKlCdzMAPCLY03LeJQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\cli.js" size="713">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>oO8wt2ql1k1Jt09FShXLX9sGMUnzzEdYRGlBtySFHzg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\index.d.ts" size="634">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>eo7BCwg063GD5L/Nkpg4rHdYOCjjQyEbtzZ20eR/bwE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\index.js" size="1095">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>pPg7WykVtDvd1ThNljpm0f1Nl4o9uAWZaft43mW8UZo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\index.mjs" size="1063">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>PTbiEy08i2I5fSPwu0F3M2qu5QMgOuKiyQ++tb8zF90=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\androidServerImpl.js" size="3036">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>0A/ZVfd846o97qbxIIN3NEP9JAieFCa1HQGSbC+VFEE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\browserServerImpl.js" size="6231">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>2EGfE/jyceiBJrJaZoHUf/q8+zy18/NHMUYoo6FI0jo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\cli\driver.js" size="4221">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>+GrKfMWswwwH6bRv7gd/xT4Pl9I4Ek2GlcfuguSTYq4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\cli\program.js" size="29129">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>/eUVzSXe7OYK050pJHc1KLWxXDqYBNAmTzbO7dyN/K8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\cli\programWithTestStub.js" size="3192">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ZbclH0TUG8sfdCcW1wp+4e23/DorjJtyRPaOgEGE/Yg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\client\accessibility.js" size="1982">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>+ajMcnWIRcjIxASZw2GU9W8lQKADe540ti0sWp8szLg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\client\android.js" size="13665">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>3uQnQ2ba0BHAGonoRjq2IVwk78/H2ICkgDs1715NLpI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\client\api.js" size="4786">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>1iFwsinKi9f9sKKOekSYz6gPg58/GctuapC4Hwx77gE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\client\artifact.js" size="2756">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>uOZfVB5JDWWw+IjqluqXxfUJE0LlrEo5+ojK/XLj4E8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\client\browser.js" size="6497">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>6QOvAqHe5iQcNV1ytAU9LanCrUfRuvq/N5tx6VvJ8Kw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\client\browserContext.js" size="23906">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>gpGDGNmQpi8HYvvjaaxYP/41a/xk/fPqi1NgGGNlSVg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\client\browserType.js" size="8961">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>pcOqTHWAOTF1uQDGkxuhx/wo1ldX1G2b+LIggEdZYcI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\client\cdpSession.js" size="1790">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>tpAS+FgHrorYpTY/goaPhrnYpRzjXJz2yGPhut7Auiw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\client\channelOwner.js" size="8020">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>hfUZCqh4jvZZuOY2iV0ysmCNTtT3r/qnh36hUVusvCo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\client\clientHelper.js" size="2318">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>NQ/ejEtpII/MvChuYo7rjZBItNfGrEjKfpu29Urdws4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\client\clientInstrumentation.js" size="1986">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>utzsa++fto3PBHWP0232pkxVGv8di8pfyY8uTXVujTw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\client\clientStackTrace.js" size="2525">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>g5DPTDHWJ98HDhdPfG24eVdt7snfB6G/F3m2vPZaeQc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\client\clock.js" size="2316">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>srV+ECO4N+ddc0du/U0pFFlQs581g7eWfVXRkWWi4+Q=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\client\connection.js" size="12281">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>w8EZU7NMoY7y0oUV+rXSgGlER0aU1VgF9z+NKrr6lKI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\client\consoleMessage.js" size="1725">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>xAVo/nQZz5h5oHRZClEfPr4sqLhiSYoB0vQ01cHgI4M=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\client\coverage.js" size="1486">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>cuufpguqoTNugAzCqiSpB7QV1Y2fUYbtvUcUNIefMq0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\client\dialog.js" size="1741">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>b9NiQ77Cqqg/DMxv+5IvFhwvD6y+4htxOtP4uPuaVA4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\client\download.js" size="1807">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>TaW7pyHCe+WaPIpmtpZVaLuHORBPWVlTSKZtTbLrsjk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\client\electron.js" size="6142">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>jRQDLHyg7Z7Z3rR5tq3nhmtJ5fJ8VKQ34f7VrZ0ZhvU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\client\elementHandle.js" size="11643">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>aX9KVK3407VFbleyOW8K3NkfaBTJwUfbMpJSQBn0kQU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\client\errors.js" size="2683">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>E+wgu/GEYWkAQ3hVFQJb09O//4tRr8v4xOBt/7wBQ0c=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\client\eventEmitter.js" size="9931">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>bS86y/yc/uUAIIbb5nZYA1O5fOQLPqv5OC2DKwSuPgs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\client\events.js" size="2750">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>b/9kns0ex1V9rUdB0vPAtXXS9IUL/y75emYT3dGnOY0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\client\fetch.js" size="13492">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>QsR5rqnT23iwlLQUEOrwqWsl40mKx+aDcYIfXAvtzFI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\client\fileChooser.js" size="1474">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>5NnumBD7/FWDJ+sVSxqUiTJNc4nGy52BP6ixYXyiHww=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\client\fileUtils.js" size="1340">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>FlByRjOrHnw0704nvLg984OtSIFyKS3gYhlj3tLNIuk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\client\frame.js" size="19445">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>XySCC4uu2S4TgVCMkt1GGg5TgXpsUa/hAybzT8EmH/Y=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\client\harRouter.js" size="3035">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>V2Yov6xslowI8IHyJKVsnLhS+vbC3m7dvCmaPqqdBok=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\client\input.js" size="2503">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>1ZA3JwNXW6KB4eTwZS2Feuxfe5XOI3aumBMHif9eA1M=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\client\jsHandle.js" size="3947">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Rzvkle7k2viUJ5j+EAf0CZJBGWU2PbkQnv9/vH6VBBY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\client\jsonPipe.js" size="1350">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>TN22YI85648+M7PbiUAVsb5K7SDZzZCMYELvvQr+nkA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\client\localUtils.js" size="2079">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>zWSxHIiUAPhEbq0c/42Rwd2uLCIkQ2qm31bUvISd4Aw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\client\locator.js" size="15158">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>lIvhbbDoqTKzAis1PK3VrQf4dGXcAA/sKsstz326MAY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\client\network.js" size="24912">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>3p8UScBlJZ6xqKo/5wCLmmcDZvP1Sco8tiRdVaowfcE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\client\page.js" size="29458">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>pnVxLSoZNamV8NScboBDuCzsemGHqnr2MFkuG4uACJc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\client\platform.js" size="2224">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>84JInFYE/xN0zQG1tsc3Vtdz4UYH3uWGhrg2i5b4aNs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\client\playwright.js" size="3223">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Yh2Fxob6+6eAYAggBX494Zv4yGEZU7EmDH1G+XGx0yo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\client\selectors.js" size="2337">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>69sJjoTehSpbZFUxgs5B1N6dGfNCH1VBBwKHZNljiFA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\client\stream.js" size="1364">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>BLPWAO061ZHkbsa07HHf3pDPZNB3Z90M+ebPgwgnHuE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\client\timeoutSettings.js" size="2654">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>MEnJxTy1xPhND9ANI3wveN23C4rGCQh5C47yjrCxTvA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\client\tracing.js" size="4289">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>x3XkAxcbEpRhJXSPjmrbm7/oHO5/Je6+ZbeWRxgIl8s=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\client\types.js" size="1157">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>jaopFfvfUcbjoI4OTYCNZyvbUWb3GakVfDQ+ZNh1UMw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\client\video.js" size="2124">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>U3ABm6W32dDi7CLiTBJ19E4C8GPi96lgSgZ3EkEyh6Y=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\client\waiter.js" size="4841">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>OwYKglTNtvo1sJN5rQqN6Qb/poJnC+M5IH1Xc2vJ9WI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\client\webError.js" size="1215">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ftODDaC0LvjDzyL6GHLUNEnGy1HhZv7r3Qz8Mj3MBOs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\client\webSocket.js" size="3118">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>5/tlLfmQnPETBLBWwVFFDRYwY1uDTUf5BoLqxKSnXLo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\client\worker.js" size="2776">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>x2GzkYPzgWnfWkQ7M9EK9fs9gUxSbuFqx3yN2ldkUMk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\client\writableStream.js" size="1418">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>YtnY5L5ZddOh+UioCpmhSTUTgqvAGfyNVpaxMRoQeXc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\generated\bindingsControllerSource.js" size="9197">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>v5suHUs4GKzY2Vj3P9+8wX+vDOC4EGyJ2+b8PchBMlQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\generated\clockSource.js" size="20466">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>5tw1LOtHnEXBhys2eW1VtlRP1UUDQSnJ/sAOX/8cBbM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\generated\injectedScriptSource.js" size="302520">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ee1faY61rwUd75vOQN9wgGoz/xmi+OK6VnCTw5Zirkc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\generated\pollingRecorderSource.js" size="69514">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>UCWJbFFE7Fhu5j9B0mS1rpSt20a5W8mbPagCMIsadZA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\generated\storageScriptSource.js" size="15484">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>6KETPj1RwD/SnXc2k9sFHOlN/X74PlNTC/uTa8hx7yA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\generated\utilityScriptSource.js" size="11580">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>NyuBw1J6f/XpL7hPjOnuneVDlcffZq33zZW9OsLOf+c=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\generated\webSocketMockSource.js" size="12109">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>nz901nEiO1sxIINnD2hseyOUiozEfeFPxPMDp10Bk3U=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\inprocess.js" size="150">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>7daPc6IaZG7a+K80cUz6sBWYdjxEZZDgBw+y77/DqNk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\inProcessFactory.js" size="3386">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>i1f06lsq0d6fM1hx330LeXspiTl0Bp/xRC8SHfaU8Fs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\outofprocess.js" size="3350">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>cq8SLUeePX9utriVCCWjsr5cf5RRx/CHVJEtqXI/0+I=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\protocol\serializers.js" size="6741">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>un327E9wPyBcdbGKB5IN7zPypp70IJGpuM4j4il6Pec=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\protocol\validator.js" size="219665">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>VdsoGdIgKzwf/zaZrfC8H7ez+OuF1OfnRvUUk5TFpy4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\protocol\validatorPrimitives.js" size="6051">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>o6vniEclNJfeBOpvMpqSXfZsmi3WKlgwqsrxRh1BKLM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\remote\playwrightConnection.js" size="5916">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>pfRLZE78Sc/JyNMI3Wvg+gOc08L0zJuzJulUgoAqCYc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\remote\playwrightServer.js" size="13353">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>sDe49CvW4lK43JmKPJcHJwof1mudncp1BJL5hqYgz7o=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\accessibility.js" size="2446">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>RXdsWf3tJh/B/CmGrhevseFsOjntHBoDGuSTdOo8QQs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\android\android.js" size="18839">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>IDbmQzHbL+EgsihVwYz9QSl0CoLA2YrA+D6FnsfEIu8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\android\backendAdb.js" size="6531">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>sIz8V+3JY5M1l/JsfIVZolHXCUEoiHNY0ZgnjbDDiZo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\artifact.js" size="4467">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>AJln4QZOoLJPOn56EHOBpLg4QhxVBbLjlEPD5H2/0QQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\bidi\bidiBrowser.js" size="15973">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>D9fbYPs26QNkIYIyqGxexQHphE6Oc9iwvcHPvW5v6ww=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\bidi\bidiChromium.js" size="6885">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>HAimdn+rChQTlQTo+NMD1TGlxo6B4O/CRqtyeylQ140=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\bidi\bidiConnection.js" size="6816">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>2hA80LhgCkdmWO0F23LRnfXrwWP9tC+uCAdKnVH8yLQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\bidi\bidiExecutionContext.js" size="9394">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>aniDNmR8ATPThscBkKIMWA//Md6ukFmA3soKnLV0VS4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\bidi\bidiFirefox.js" size="4980">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>0W9fdyngviGypoWGf1cKDkl0BNzhNyV1vJX17TrTnsg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\bidi\bidiInput.js" size="4987">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>55tIzFxqnZeUOY/xulB/RUh4z50zJkwByI/lSEPtwVA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\bidi\bidiNetworkManager.js" size="12894">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>a0pVkcv7pJiopR+RaBNf2ZJ0lhksue4p+PxeY88CgOY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\bidi\bidiOverCdp.js" size="3555">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>xTVo/mcawJxJu1E9HQKXdcBb7TAbzpcGpuF5K4036Jo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\bidi\bidiPage.js" size="18651">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>tE4uYMqywVMREyO5ujJ1iBJiGEY2nAexJd5HNiz7gJQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\bidi\bidiPdf.js" size="3537">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>fnE3X690Fd6921oNvbOBzBg2cYwsAMK1M/RFXZYXWxE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\bidi\third_party\bidiCommands.d.js" size="902">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>LBn7bL+VC2F/oD3hK8GvymJ9Lt05ogOBcQoF+a4tdO8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\bidi\third_party\bidiDeserializer.js" size="3267">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>2lJJkI3qC5UV/mJP/FxTHpFwJMQxtJjAPpG5W51IQY0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\bidi\third_party\bidiKeyboard.js" size="5606">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>p0xOvN6/A0UhfvjT50OWM74i/0RsB011hythrnTunZI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\bidi\third_party\bidiProtocol.js" size="1239">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>xhriqW9bLqsw0gmW9r9WjsI9DixYHzo5f9ZyKbfQDsI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\bidi\third_party\bidiProtocolCore.js" size="7068">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ESaPCQNe7p0B2aNgTPT/6vJ8dQKnFeaPn3wGTPkWiFY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\bidi\third_party\bidiProtocolPermissions.js" size="1585">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>+sNQvAc9VOKT8R6P4vMa+/jWe9X4MfTg9TwO2Gh0vGU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\bidi\third_party\bidiSerializer.js" size="4093">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R+aRUkVvkv+ZQA8UhwMMgSx+hfPCMeUjoo6zXEUZuDA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\bidi\third_party\firefoxPrefs.js" size="12079">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>k69NQ7hLfrQjRdAha3LvfQwIXm5knUBRe95URxQEyE4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\browser.js" size="5788">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>T0YdhAop8OrJ/ioPEPfPl8BrLV7jfxeYhUCru4X64Z0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\browserContext.js" size="26753">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>kjFFqYc7KfrJtMjYre6Vpby3uA4eRGwifM2vsVg/YFQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\browserType.js" size="15129">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>uJ2gWYiAm1ebXoTw4KIqmlCWDmwYEF40C/q6MgVJu1Q=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\callLog.js" size="2861">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>crjE0rFA/xasTq4/7PNNdsrhQ0jkJpZxXVjXgKqJspg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\chromium\appIcon.png" size="16565">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>a6mU8Fxc8Y4i2ba++YmPvexq1NTXf1GH0GCctC1y0B4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\chromium\chromium.js" size="17708">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>YQhuPmNhayO7Gs2zAz6AUTR786uV2P9KsKcayhKJMZQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\chromium\chromiumSwitches.js" size="3964">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>1D7htZbqiuyPYZ9dDZ8NTEkZhpEvdlNehQS4FAri9AI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\chromium\crAccessibility.js" size="8269">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>6gEUQFwep//Uj+mkQK4nTYMbz2ZCtyj0m4ygCsLR6U0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\chromium\crBrowser.js" size="21193">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>vS46mcF2oVThp24vgY7/882upOeM68Q3N50MVfv1fZ4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\chromium\crConnection.js" size="7691">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>tc4Ql2Xbq+jJa5+XZi1H2nm0egbwOLNPUPplH6bioOo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\chromium\crCoverage.js" size="8886">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>i9jgMwq7r2BWAzFeQUEy00ahu/4z/lX4+2k4lFeg5iA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\chromium\crDevTools.js" size="4504">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>u8VvW71/oEw87qnak8brzKQ7I5TvS56gOG5f9KRvnQk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\chromium\crDragDrop.js" size="4972">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>SSC1zASWZvVtwKnXWtWbHpAAtir5feySzTkI16k1cMw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\chromium\crExecutionContext.js" size="6627">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>S02ifBbC7HCU3MPMeDE+uayPFantO3WJEYqIPW0zm38=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\chromium\crInput.js" size="6600">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>PcrRm49S8/H5eHxf/zUGB+JCzQ0MaREiPJ1EvtmnVDI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\chromium\crNetworkManager.js" size="30512">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>VVYr0+TBkNMwbA/xUEZV51IYifJZlL1qyI0/QFaT+ts=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\chromium\crPage.js" size="46980">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>HsMSsrhw3YaZkU9kuvzfbDsOcvJJOe23HAMuxPTaEBo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\chromium\crPdf.js" size="3954">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>gh/I19WKkfv2sSmGF8Pze09FV6ZLi6LAeudfkJDp1gY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\chromium\crProtocolHelper.js" size="5456">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>HDU0Hw8Ib9SlubP4BQgDmBTVnVY+F3VQYijXQ0HhEcc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\chromium\crServiceWorker.js" size="5006">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>alqGzAtl6P0SDfDETadtdmowMCHoZGrMJFip0RjvKSY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\chromium\defaultFontFamilies.js" size="4406">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>YYOKpZnn2pTAAxYpdgA+jN78Apv1iWuCvONoNIn1L0Q=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\chromium\protocol.d.js" size="751">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>a3Rn+TwmJ+ODOGcmbsqcJWOSMYeOBUSi3QjCPirQf/Y=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\chromium\videoRecorder.js" size="4593">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>JPQqmq47Azw6SNB5yo4dI7J4mpZkol/m2Ba+W9acNXY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\clock.js" size="6495">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>yrNt8QHT9lHukXhC/MupxiVooJWH4Y8LDZMvuZv27fQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\codegen\csharp.js" size="13169">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>3rCzC0fGd5kZI6sElPhov7/3Blk4SV1i8S74ycCngNs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\codegen\java.js" size="11818">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>dszYQjs0Ld43q9kreJz4n4rUtXAyDmERPOJdA24YNk0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\codegen\javascript.js" size="11558">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>mR7jpGStdVa+7uRbwsKzSsfn2PB/V24dZJPmxvUlBq8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\codegen\jsonl.js" size="1751">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>gj7bOMW5gE5RxOjfHULOp5MytGZNXBt3BNbwMXd11Hs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\codegen\language.js" size="4183">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>K0dPgCwMZf8rMEA5YuP/6m1+rE7EbSqJm/W9E6IKHKk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\codegen\languages.js" size="2210">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>mD6X1oK7+p9g4jqfSGURKpHL0h2II88HmhKQzFXlgWU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\codegen\python.js" size="10986">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>xOvnLa1yOA37WtINsOGjIvzgOqtU3Im+AeS52QBI4GM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\codegen\types.js" size="741">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Tk2PqKhpg3SLrX4VjT5YsrqYgGaZp/tm0EpkS3rgHkU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\console.js" size="1599">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Wqopj4czk9QHDgZEa3WoneW6mgpVKRzHuY8gBU4hxdM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\cookieStore.js" size="5881">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>7KOi25WqWTRDvCvfyhguADr/g3/rVU3EhfwWeAoXd/E=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\debugController.js" size="9009">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>fw79hdaZzZmFb3CEWZCdFg07G0sv5GPVWd5KEBHDznk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\debugger.js" size="4112">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>+j0rjSaIUOnpo5tE6G3hHlyv0FQkDseIvBspONT3NIc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\deviceDescriptors.js" size="1843">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>o7As+8rzcEBV6d3sPzF4C3piQRb9KwT/KWqYxDexq5g=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\deviceDescriptorsSource.json" size="54181">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>yQMnijTWrdjE6aI3vqYwZam8U8s2Lm1cB1mmglANLaM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\dialog.js" size="3677">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>q1QYxYShqxkxtVOwvzQMSL5bPP8/314ibL3ayIzjW/o=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\dispatchers\androidDispatcher.js" size="9508">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>0fz/GzoeEZ4X/bD3Ql7fOqq2RiQE7w/651ioQ4LoiAk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\dispatchers\artifactDispatcher.js" size="4542">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>LUM5Bdrs6KNW6XBu0Cp/MeOw9RsJG8F3kXhY9KwFerM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\dispatchers\browserContextDispatcher.js" size="19664">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ptSS4CKFz9RfZtLDL1pFQ9IxuT6J+hFuV+WalwM6yQM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\dispatchers\browserDispatcher.js" size="5727">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>zbdMHa6nwGpsHonrrfJgVbKpkS5e/QppIW14eBYDAQw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\dispatchers\browserTypeDispatcher.js" size="3023">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>5nZdAG2YuHPqM8qR2sXxnbgc64GjBtFZ0EwL5MwiZcs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\dispatchers\cdpSessionDispatcher.js" size="1904">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>qOieGdikDi+Djz55TS1UhIhJhJGoUoHAe3PzClYwq9E=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\dispatchers\debugControllerDispatcher.js" size="3449">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>zim5rGVF1hdL79b4856s7PKl7be2MxtI7KAD2uJZ+Cs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\dispatchers\dialogDispatcher.js" size="1795">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>jS9SxeeV+YjWY4AxModicclz3dS0ussZmrYKzmgHvqM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\dispatchers\dispatcher.js" size="15165">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>JLZfS63K4Lyuav/WgTqOhNfy2Af8EY8tUlxUso/Sz/g=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\dispatchers\electronDispatcher.js" size="4180">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>XviiIiBv75pPK0RcPG/LRnOYCfVFKMTJnEmS5KVjTe0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\dispatchers\elementHandlerDispatcher.js" size="7941">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>vDQvxpcsHa0CT3GTYRKx2OPmDqf2VFlGyqykZMb3bcc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\dispatchers\frameDispatcher.js" size="11390">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>PMwNG/RAOKNJknnUkn8J6TZYwInJ0XW6PzB4/1Ch2jA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\dispatchers\jsHandleDispatcher.js" size="3784">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>dQ8//3ZPUXkTqQ5h4EsACn13fk75R/ylvAO0O4/3DHQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\dispatchers\jsonPipeDispatcher.js" size="1940">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>2mM9pydg7Wr0uxZUP8e+U2fi+8OkvsQD7UNQEbsN9+I=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\dispatchers\localUtilsDispatcher.js" size="6427">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ewNiUdZlhC+x9q982XVRLG0XSCv05L9sKPiP2Mteokg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\dispatchers\networkDispatchers.js" size="8280">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>dIAsNB+e2QCPTD5Owb+QvyFAJlFwMgNNOhj8f3b3sqo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\dispatchers\pageDispatcher.js" size="16730">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>eVICEHzWme8sc5HK65RhoQ6ijw+N5R0sjKCrlcO4fg8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\dispatchers\playwrightDispatcher.js" size="5661">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>+KL39G6MXKpeDoLG0JEHFCI1xw+/0sPimReSnh+wpS8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\dispatchers\streamDispatcher.js" size="2553">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>KMyK+TczYVUntCG/eu0OrTf+aAPyCGax4IcED7jGt2Q=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\dispatchers\tracingDispatcher.js" size="2553">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>0z4ABEa+9Z335fWAusKSRzCZdNrDVD2g/FYvXehahbU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\dispatchers\webSocketRouteDispatcher.js" size="8325">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>oS6uEbcNxYPZFdSYdxpl1hfhOhDqkMrKL38bNk4T1eo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\dispatchers\writableStreamDispatcher.js" size="3463">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>QNs6EbeXaQ+bX1gwVq038v7J5w3R0kWEzSh0StPaIPk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\dom.js" size="34206">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Z0PbvNtwchq2wYOnMLuznUHg3vGcp7L+C2FN+WA+nkE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\download.js" size="2931">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>jAnAbNcf+cRVcspe7AdsGArkPsA1nHAFt/lnjTHLloc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\electron\electron.js" size="11842">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>S1HZ+p4y+bic97GOV7iZtrZyN/x/QONT9d7qYy4FsYU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\electron\loader.js" size="975">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>+SmBwQHZ0rE39UXor/H7/trX9lu/aXR+1gh8aRsYiY0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\errors.js" size="2459">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>iDpeMAhbt6OfADvKRi2lGR7j6eACKY061SUClolq+ls=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\fetch.js" size="25100">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R2Oo1uBwiNcCtmf27ZxU6wqSMoAy32/02PyAbh21PwQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\fileChooser.js" size="1367">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ZKr2hfkDWcO8Ejz0pPC7pqC05ua0J4i8MicHbEsSr3A=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\fileUploadUtils.js" size="3938">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>WznZvcjmVWSx2DDgL3znEwJlbfdl81yQu8HL84eUvzI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\firefox\ffAccessibility.js" size="7045">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>wLinUfqE3odt/dugHrnry/5x/a7fvUYOCGJY3FbaAi4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\firefox\ffBrowser.js" size="18694">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>p1WB/qv26Tj1x+1Kg7Tm8HyvvTAFHukRQsGdrZZsxw0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\firefox\ffConnection.js" size="5366">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>TgLpA/58VVxuqybs+eNnNQEXuM4xHfKazcTlFc1G19M=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\firefox\ffExecutionContext.js" size="6489">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>D2DX7ClZCqwqdIBUXaL6A5fs0KChSSj5fRNnF0DbvPo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\firefox\ffInput.js" size="4582">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>A5mT6UyJSvmTwBWrIpfFxFKydwUj6JbLafDpjfYxbkM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\firefox\ffNetworkManager.js" size="9965">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>GwsgTEin4RQF5iqCK6qCrPIz1WVcP0svXMLK5WwtM0Q=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\firefox\ffPage.js" size="22983">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>EED96+rvV2E61UXEFNhG/Ln6No00ALxpTauuwaVAlpY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\firefox\firefox.js" size="4726">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>nQWYojxzoWZdXsxmEJneA1gxMSvs6VPybqx8m+Kgxk0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\firefox\protocol.d.js" size="751">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>a3Rn+TwmJ+ODOGcmbsqcJWOSMYeOBUSi3QjCPirQf/Y=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\formData.js" size="3220">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>OojgiPjmSdA/PutmaV/s9zdn/l3DeEVLGesH7BRlJ30=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\frames.js" size="60808">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>GZbCusl4bDkelDdpUOLxi1sUsdfFSf9Wgb0tg1Nnx24=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\frameSelectors.js" size="7272">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>QR0QjYrdbQ03TuRKlF0ZUflBokFecfn+EDO8dO84saY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\har\harRecorder.js" size="5692">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>7sfYXlVmytQ3SIyM+Y7+oBSZe+3Y+BWruEp+ofBBUqE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\har\harTracer.js" size="24343">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>7Kgd454VDLji6Q6vHGs5XFl1duTcyBEm11KvIN9iSfU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\harBackend.js" size="5977">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>+Y3yEJtXwj8yTzhkB3wYBt2OYud45Tis+qUet/OhdkM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\helper.js" size="3886">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>LWVZLTT7HhpDrcbSzZ1gzg/2s8O5uWdqYeTSZH3OqpQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\index.js" size="2501">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>D8qVi6A7mQePMYx7bpx5QEJ/NpE3rpa68gRnn8/w7IA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\input.js" size="10072">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>cVw8jOx/mmqdcqY/PfzO6iXczf65m+Kt+CPaYvMiQAY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\instrumentation.js" size="2536">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>IvqGXhFC8W5jhgDT0+2kZ300D+0E4JDh7PzqjGVdm4o=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\javascript.js" size="10769">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>E08qrpU8qALD2MTaLdsIVxKa4wRPiVjNuFeZM0Guwlc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\launchApp.js" size="5636">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Uj67AuqMI2jDEguCEkpNso3Z/nmmoZ2hdbtdcD4Tsps=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\localUtils.js" size="9143">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>cyrCiYc0D5qePBDmGz+zM5KjJEEMsPoMeIDnYJ27gq0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\macEditingCommands.js" size="6337">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>7RmkLAMoPIAPXYC/ev1yySenJs0ltjnmCS4Iun4tp7E=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\network.js" size="20350">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>dmk5/c8w0xIITKmpna4Tq4iLa73Zc7u0Y4Sxhz8sUMY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\page.js" size="33279">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>qJpLAvo/7sLA0mPguowqfESQEBu4kTUs4HfzrmaNz7U=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\pipeTransport.js" size="2989">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>mrAbcurTHregekObyYPW4XON2Hbax+x6TiBdI1Yyk8Q=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\playwright.js" size="2999">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>6BDcYOAQlcDWD4rzyKuGptcIKMbPk2Ztcbljw0d0DsE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\progress.js" size="3863">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>SQBPkKcCslgo/Guqq/k1e2CDbfTPtbalLtYnH4HlZRc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\protocolError.js" size="1842">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>K22b2XqqarObZpaKqnNLxcFSDzizgg4NSB8qGAY96j0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\recorder.js" size="18663">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>5KhLXY1A1eIr3UhSWqB3hU8Pf3IFZGvgnKc41djZFpA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\recorder\chat.js" size="4749">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>XbtpVh87F/lqT3MHSCjd9u0DMIGFIzAx73PgMnyACh8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\recorder\recorderApp.js" size="16449">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Bu87W3tBKFI/ZZgSIqc+In55trR7tZ/oAX8vtFK2/5A=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\recorder\recorderRunner.js" size="4770">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>/Zlw1YmHxjZwVBgwUH8AUAVHX5SNETjclXGSrRnT+7c=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\recorder\recorderSignalProcessor.js" size="2873">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>eRHuxXyonSUvgXfP2RannlK7F8zVjrcfAqZQJSXvGio=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\recorder\recorderUtils.js" size="6104">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>x+k9ZREIzIbwg25tx6zX9WBQXxX5zLj+yMU3cuOsBxU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\recorder\throttledFile.js" size="2118">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>dfHcJdx8B/+6y+hbW8zMVv2B0QFAsrxu/UJxCyBePok=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\registry\browserFetcher.js" size="7375">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>tFQhsEuV0ntZ/QALe6pSoJaj1YXellVtnW5Z6upiXJM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\registry\dependencies.js" size="15869">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>4dou3rDOE7OChQHukrmAysvnlWUhVEs7xoo1CtQN8t0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\registry\index.js" size="66569">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>x55nbHPKEfDMaZVL21w6m6eXRJrhYA1QDnD4uvI8U1E=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\registry\nativeDeps.js" size="36477">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>nTrasP7fxfbEghdYL+NGJIddrSKzU3klvG+BFAyU7Wo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\registry\oopDownloadBrowserMain.js" size="4936">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>O8K/1isnTzBESOMd9QhxcZ3z60aDMwKPZpmfpTVOpcs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\screenshotter.js" size="14430">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>mq/2wXPGqaHIDoMd2SzMJAlyQ9Sa1gDch8S8H62cYls=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\selectors.js" size="3851">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>su3PKhzyoE6C3kffLh5YB8c0LzhRakyWOv/wGUpUuJc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\socksClientCertificatesInterceptor.js" size="15410">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>8C/6xlqP7DIDZOagdXU9pz0hEyapW2u7QxQ8NFTn920=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\socksInterceptor.js" size="4641">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Ot4x1xdbJDNq8b4QZdLnuPGkTHi5uY7lXy/TORwa//w=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\trace\recorder\snapshotter.js" size="5541">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>oBDTwLGHmoWaEOEMkqjylRN0rpF2M9qycPjKXd9rGlE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\trace\recorder\snapshotterInjected.js" size="21329">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>58qdKoF6/bHQLE52NonmnHqeOSwKLF6ENyBj2WVmvUk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\trace\recorder\tracing.js" size="22055">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>zeBQAZZDdemByCMbr1m6IYz2/UMesrCyUEyJnQJggjo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\trace\test\inMemorySnapshotter.js" size="3283">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>y5K7nQv2aKzeG0+We1Dgtu2lSOuQvJHvM0W2Vj8SdVU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\trace\viewer\traceViewer.js" size="9848">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>AJPtRPXaAwv9BQJ9NUT6eTWYTYy7mrVP4fvK7l/94DE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\transport.js" size="6697">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>KwbfKg7yNAhStpPvW7o7mPipiMveXf0NbmrWLgjiUnY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\types.js" size="1157">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>jaopFfvfUcbjoI4OTYCNZyvbUWb3GakVfDQ+ZNh1UMw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\usKeyboardLayout.js" size="7907">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>0MQkwoVvZMGr+vsbAZheMsAnw2TUGvKVGaiRobXsTtA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\utils\ascii.js" size="1751">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>C3rVtK3vPQ9kpTcu0q2c13h0NHTkzvf9nmjoJcB+G60=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\utils\comparators.js" size="7774">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Ud2wXJX5DtPW4kkjFx/ApK9szQIAF9ECtV2RsLOEFwk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\utils\crypto.js" size="7581">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>DBRdqI5zAFVbd8ELax+hCQUpAZ4RJo0pigBRSJTF9E0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\utils\debug.js" size="1494">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ffTe02AjkFVpWM9Kl5WwYhfMXrzRevejp9/csqVvSz8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\utils\debugLogger.js" size="3838">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>D7Dq3GbfLvZTe7hzt+LyeMKyOJoruyzckIwC2t0Mznk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\utils\env.js" size="2313">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>LQzdb70fEISu4dClui9DWTntNQbjaLsRC/dn5YJryTc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\utils\eventsHelper.js" size="1465">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>rb8tNFhl8sQVYIY0W8eA9pVlk1mtEQ8yxYUG96lerMg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\utils\expectUtils.js" size="1579">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>pMW9Tx8HsA3zdEoNA/PHsd+ekJh/mq10XP+EmJu6VqA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\utils\fileUtils.js" size="6681">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>M9zCiqBqhenu0XXxIQqBQuqbtJVSDpk0A+OQq6EXxXI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\utils\happyEyeballs.js" size="7423">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>CbBu9kXqgJ30nyaqXBDXA7OKusKGU2wnZyz7cJ76zEI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\utils\hostPlatform.js" size="5656">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>4n+2GvQmtwc2oafJQqiqiVvVJQ/SC/pKOKcNCgklW9E=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\utils\httpServer.js" size="8135">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>xlTq4UFtuC4zcDX/z06GtYC78FQrx2GUZEXkaZBJ+jk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\utils\image_tools\colorUtils.js" size="3015">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>393cefRVmgl7Xxu0bcr7PII8Y8eFdOvQlBs9YWaLH54=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\utils\image_tools\compare.js" size="4607">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>A4aIuk8aiI4z91ONMlo52CB6fd8ecl9LMGC3KErFN/4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\utils\image_tools\imageChannel.js" size="2903">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>3V9cpOIors4QkWJobRA/U7suD6LA+wIIvd9FBneAnH0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\utils\image_tools\stats.js" size="4019">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>X0rP6EkP0ceoVpJ04oEvS7wa36gAZHUX5cAcEcOslaA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\utils\linuxUtils.js" size="2740">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>T1B+ZuwLyL9j1JTV0r8WM2kcdDRIORJQfnpeuTN6UL0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\utils\network.js" size="8385">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>xgSsUtRv90ANM5L5gAMGalJmDiUdtpDUH1e/J/NqnLo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\utils\nodePlatform.js" size="5165">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>LQcLd+4rZqXnkB2ABWHrwGfkB/UwErYMY84B4255LYw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\utils\pipeTransport.js" size="2848">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Dz0X5YWrBVGgs/NMXMVEFbnPUtfIG0Oj7mgDmz/pXas=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\utils\processLauncher.js" size="9325">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>2py0HMFgX8oeJsamIS8B7wrwElqel+7LcGcbs6jx/Qc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\utils\profiler.js" size="2516">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>RJSH6RX/CP9gZC4+igEGeWCYWtwgFXPYYI5E7H/A1Oc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\utils\socksProxy.js" size="17519">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>UE3vTsdB/u3sysA/CN/uc1aGx/SEbxEPt1Y6qD1jvZk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\utils\spawnAsync.js" size="1683">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>IXu30iwLinO6BtjNQrxVpEPCCJ2zU9n6gOKE9v0DlEw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\utils\task.js" size="1607">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>lXol1Cto/nCLMPJ/V80DM6l4WR8KGq4TN4qSHZKeqSo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\utils\userAgent.js" size="4151">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>mdxwiy6mLBTn4YQVqCIyYr7NHne5q8vJoU90D1HOljU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\utils\wsServer.js" size="4748">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>n9u58ON6faa0ZpTGt2fsVegafw5KXEzWP1TKrklmPQc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\utils\zipFile.js" size="2399">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>LX4xBIQvA8NWl5jTT1KtGmU969xnAwLaLTjGixFlmj4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\utils\zones.js" size="1916">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>STsJOeQSI5CAsTTmjEhF1iX2btd7NzzC64BZtzNcBmk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\webkit\protocol.d.js" size="751">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>a3Rn+TwmJ+ODOGcmbsqcJWOSMYeOBUSi3QjCPirQf/Y=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\webkit\webkit.js" size="4455">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>bYUn+TyN6IAgueJk7S/V0cgS/FMf5MZ0qQ0pkrjvnY8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\webkit\wkAccessibility.js" size="7220">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>mu0pUntMlwgM6EJ/5m+cU7slh8AsTH3YZpBHHQsZcnU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\webkit\wkBrowser.js" size="13884">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>h0VB9hpNR1ywpTWuTRWO6UOrnPdw4UTkJjfP4x7STvM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\webkit\wkConnection.js" size="5361">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>So/qHZIAQhapn72DIcskU0iojV4jH2rJ5tgLkBZKNsE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\webkit\wkExecutionContext.js" size="6316">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>BNjwwHPRBng1fBvVCIWxOlrAQ0JJ6Cg5EeS4z93+U+0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\webkit\wkInput.js" size="5876">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>f8Jwnmom5g0AXRRY8N8xYPaae/ei21W3OeaSIujOgA4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\webkit\wkInterceptableRequest.js" size="7080">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>3vUX1ql2ng6eXQFRJ9ULg+sVCn1ws6GYk+wIwY264EQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\webkit\wkPage.js" size="51570">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>2tqdb/JWI2CU2TO+LTBEZ56tx5k578EJs+gykYI4N/o=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\webkit\wkProvisionalPage.js" size="3648">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>PB97U6wjkcKR4LJ4Pxn2LxuaJdE4mmtYfHCITgDfhNY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\server\webkit\wkWorkers.js" size="4308">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>uOK00xQ3FqnS0C7i9HtkwUoSZ/eo/lwY2XhIUZ5E3LU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\third_party\pixelmatch.js" size="9501">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>c4OugXppU09uZynmVPcBPFTLhjsOLGVGUhPz3oPDJ/Y=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\utils.js" size="6148">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Y9Bb4Z/vWsM11RFHdxvVy4DUpFyKuRHaBZVrNKdQmeg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\utils\isomorphic\ariaSnapshot.js" size="12962">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>DbRi3UMi8C0bfiUtERUbjVIlaXPyXzAjr/k1KeYg1Rc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\utils\isomorphic\assert.js" size="1126">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>kYIIEZ1GlVDwOEyIWNO1y0yw18gbSJD1DiNO10eH2w4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\utils\isomorphic\colors.js" size="2395">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>RVcB4/cyO0dC/syi6mfu9BuBm8BeoNw+5q9KB2zlhWQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\utils\isomorphic\cssParser.js" size="9239">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>oaR6jASsRFbympu4UW6zu0sTGCinD0G3+NAVZSKa7dE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\utils\isomorphic\cssTokenizer.js" size="26850">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>EuWJu/yZSVfQ+LGO+0Ua0XOvaja1R3LPtvh64xw67KM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\utils\isomorphic\headers.js" size="1895">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>QTBOC7Cg6bDuC0oWe7+s0VkvG8TZmzycGNyTt7X5Ovk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\utils\isomorphic\locatorGenerators.js" size="25915">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>nZo6r7oPumsAqSmTlQWlW3gEcmlsXIODw7NTtzeCfs8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\utils\isomorphic\locatorParser.js" size="9681">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>GQOdWWpkznfmLwys4co0EZRsaINKFlkUphDlidrR4Ac=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\utils\isomorphic\locatorUtils.js" size="3503">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>qCAE2JN2KMBb7ITGHyRdfQJ2JLWMCKv5HtIxnmN0JnA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\utils\isomorphic\manualPromise.js" size="3402">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>lBZJ5DeMes9Qe6n7hwAnFc1DvaWDWe3IJ0NMCctIBg8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\utils\isomorphic\mimeType.js" size="15289">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>hI3iww4+qqWu4TXx0M8Z8daoNfZDD0HbE/N7aYj5/Mo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\utils\isomorphic\multimap.js" size="2095">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>6yhAwRgpMc+zv7Ys5IFwA8UtNkLgXRf+AvxU9GLNJcA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\utils\isomorphic\protocolFormatter.js" size="2810">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>hY9ZTK9gMtzS72//uO2IpoUU58+DEYrurfvdrwNGMiM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\utils\isomorphic\protocolMetainfo.js" size="23710">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>pHRSDJBdOO+QNYe9S5+/GQrhIKahd8jmI0b1QhJ80EQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\utils\isomorphic\rtti.js" size="1521">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>43bZNN//Q3vh/8Po8j7tDk6kon8uLjoLDfKI7FS912U=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\utils\isomorphic\selectorParser.js" size="14046">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>YgVQPLxnpm5Ui5loWXWN7UT2Og7OkbLJ3/WAf2aptMs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\utils\isomorphic\semaphore.js" size="1598">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>OWI/3JREwKjJ7+XYbmxdTYVOE7JXnohOY/OQzOWW55A=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\utils\isomorphic\stackTrace.js" size="5326">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>7W472R0zlYT3s9wgfGbenk/PXNOna3aRgo5ImsWTl+o=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\utils\isomorphic\stringUtils.js" size="5492">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>SUCLs/Ap3ZBPnMDtdHU+monvGHl7eJnpNWzr9E2Xi8s=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\utils\isomorphic\time.js" size="1759">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>DuvmH/0RMIT1lVRSCVNrezVL/wT6oPin4Ksp68X8wXk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\utils\isomorphic\timeoutRunner.js" size="2516">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>YUJZrhx+Lg7bHowiF28oct6arEaCsivh1hHb4707lyA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\utils\isomorphic\traceUtils.js" size="2175">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>wpH1vS10qF/+CIq65OtYKkYFCO1dLdrMGkj7b2T58Hs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\utils\isomorphic\types.js" size="741">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Tk2PqKhpg3SLrX4VjT5YsrqYgGaZp/tm0EpkS3rgHkU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\utils\isomorphic\urlMatch.js" size="6031">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>6DiQ3W7c9Yd0Id4F2nwZhZf4bGTPEPifM4Oqbb7Ndwo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\utils\isomorphic\utilityScriptSerializers.js" size="7923">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>XcrBfDD+fYPHsnm0KT3GJNQvucwmm9XkGHGD4y9BUIs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\utilsBundle.js" size="3340">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>fDu0OXpsPsYby3b6ADLKgCd0dHG8UJbvV3p8Gt3aKHs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\utilsBundleImpl\index.js" size="468466">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Z22nHFSEaQW5xg0NBBdfztEIxNBkwqpHstTGEY5k1Ic=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\utilsBundleImpl\xdg-open" size="25778">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Lnmk1Rcd04TSCnWwI9/g6fQzDNtdRB9sOFmhH849tRo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\vite\htmlReport\index.html" size="461052">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>5jwO2BE40hvDsVAjuJemdTRe359fpvb6cqmt3El7tIc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\vite\recorder\assets\codeMirrorModule-C3UTv-Ge.css" size="6012">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>6wtIOXEp3davI8rpeQUdTvAQoNz7jUbC2/KJyQt2xto=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\vite\recorder\assets\codeMirrorModule-DzQ0k89p.js" size="293144">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>OYcudfk8qYlomoFt2ZmCgKW/xvaRwhYKGMTrpxpaCmg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\vite\recorder\assets\codicon-DCmgc-ay.ttf" size="80340">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Dx1SGZNOlug7jbFi1gtNjAm13h59OAMcuv5KPA8oick=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\vite\recorder\assets\index-CI4HQ-Zb.css" size="92187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>xSrX44030HK3xQ1RGekTnMwwc2bBe8arTVsI7DG9ptI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\vite\recorder\assets\index-D7C7daHH.js" size="312072">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>TJv8TJqk/BCBwuf3Ak9AIvnnVZefkCzlwaHAqGI8QYs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\vite\recorder\index.html" size="1078">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>OxULTrpkg3PrsGE3LIgZZADienHvKC1gHvJFTKQfhQA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\vite\recorder\playwright-logo.svg" size="5033">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>awpDZ73qsQmVvCOSePBMaMEOSK2+wV55ngGQmg1m3Lk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\vite\traceViewer\assets\codeMirrorModule-CEFqZ5b3.js" size="293158">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>H3ockm8EMgPQBjDoPM+NBdZJ0+eyxLTb3sE0S1kNsJE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\vite\traceViewer\assets\defaultSettingsView-BA25Usqk.js" size="574017">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>NKDWF6z1qILAOSk64P4OHFJ3jW2pTo48+t4C0Cy2Q20=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\vite\traceViewer\assets\xtermModule-BoAIEibi.js" size="283876">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>E6o9ZItIETfIOinxmkXX8+IMjZJqKIdfL3miycKmZ+g=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\vite\traceViewer\codeMirrorModule.C3UTv-Ge.css" size="6012">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>6wtIOXEp3davI8rpeQUdTvAQoNz7jUbC2/KJyQt2xto=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\vite\traceViewer\codicon.DCmgc-ay.ttf" size="80340">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Dx1SGZNOlug7jbFi1gtNjAm13h59OAMcuv5KPA8oick=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\vite\traceViewer\defaultSettingsView.DVJHpiGt.css" size="109128">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>H+uq2eVVGShdxiyUnM34P0WDd2FwAkwNgrFvNuDmUfw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\vite\traceViewer\index.BFsek2M6.css" size="1742">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>YVNkZfhpttT1xsCGPUWpWpPmhzvKaZGtoDPZ22GhQ+Q=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\vite\traceViewer\index.CheexZ4_.js" size="7910">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>BdR91z0C31fjwc1e8svBJLDX3yTJie1MDAvE5UnRitc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\vite\traceViewer\index.html" size="2261">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>k7a91btQV+Ek6iHn4vtC0HhKaJ9uFuEqsFSSnVPrHwY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\vite\traceViewer\playwright-logo.svg" size="5033">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>awpDZ73qsQmVvCOSePBMaMEOSK2+wV55ngGQmg1m3Lk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\vite\traceViewer\snapshot.html" size="799">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>7cwlWCKq6XxtWIegw3kG5lYS0eUHxOXYNx6Le5SZfZA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\vite\traceViewer\sw.bundle.js" size="93551">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>os0mUjOVOJcdfW1veuqcMRYvWKjhElImPRDHcQEWi+4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\vite\traceViewer\uiMode.BatfzHMG.css" size="59968">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>z3msTUCt1Y8XX42MtaNcpCFf+WS+qfXmlGKvJagx3SE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\vite\traceViewer\uiMode.Dy4dnPNW.js" size="35095">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>7UsGvJLxnsyxuwfNrHBs0CPzULlrFW0H3BAg5wRrcS0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\vite\traceViewer\uiMode.html" size="647">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>6XVsMeqVBSwGn9iAa7iwEXWRCm3zcDZ2UiJWSJagZX4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\vite\traceViewer\xtermModule.Beg8tuEN.css" size="3971">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>/zc75h+l3uU74ZI2pMMyJQR/9OwP1dT+VgY9gcGQM8A=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\zipBundle.js" size="1242">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>kOQopwBEUpKegRAg54jHSaoIEy1hjsd3Wa95weS1NTY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\lib\zipBundleImpl.js" size="54340">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>lVLIexdaw85aHq3h4+veTnwqNwMSU+Tsq+zFG0ok3fY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\LICENSE" size="11601">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>RYc9AKDdJDWW3rSqI7JJOz0fBnGSG/JTjqQx1zgCIOs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\NOTICE" size="254">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>bWAhkRh7NbmwHSz/oByEacLI2d6KlvG/ho4PJk9RyB0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\package.json" size="1569">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>1Q4n9/fpNnfzqRYH7dmVxpIg1+zCM+NORR1i1gKAi6I=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\protocol.yml" size="83815">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>+o1kGWUL4909hYOHYbEu2+AVmjNbwHvl3y7Xu+bn9Kc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\README.md" size="120">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>0W/3+OOPofyVT2la1VHNwRjZyb3V89gyA5AfTDF9fX4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\ThirdPartyNotices.txt" size="70260">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>RQKZJ1sOVr6C6xTb7HmiOV3+lW+OPAo1+QEWPE7vA24=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\types\protocol.d.ts" size="744086">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>moFjxIyI+7uxhg5dyX5FDaXHsYLwPSqpigbYJfmXF9I=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\types\structs.d.ts" size="2103">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>MnJ4Ratb2KnvPkhExWfAn21Bj88PkNOBwAZSpvI+f24=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name=".playwright\package\types\types.d.ts" size="943546">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>05KVZxSpMyM183ix95l84IgxlG01qcvzvoDl5bTURyY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="MetaMarketlogo-removebg-preview.ico" size="4286">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>TrdzUtmRoYJBMKL2FG8uWsAn+IYr4XtNpMtKC0Uo4Ms=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="MetaMarkets Toolkit.exe.config" size="3514">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>MCjrVcuK81ZepHTS/o7+p9oqI0LQZMKLGnQwePptxYg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="MetroFramework.txt" size="1266">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>+yV6adEVlpUIOiH/IdsfqaixKo0MB7DiB/hBOyI4wKw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="playwright.ps1" size="412">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>mNbYf7t7KFpVK6RGn++06JpjHl+olvEm5NxLzeS2amM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="runtimes\linux\native\selenium-manager" size="5586752">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>0VsypuOyVjfcdT3p9gPz3UbqJ3PyxL6/gF+fPsBHWNU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="runtimes\osx\native\selenium-manager" size="8324816">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>AftO4zTmd3feTRrQTuU8lmXauBSVNRLJW0OXdYbXkV4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="runtimes\win\native\selenium-manager.exe" size="3760080">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>NUBAj4DPLKA8Uu4jmd1DR6lNT0molE4Jm/rGxeo4pZ8=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-LFJ7BK9\Admin" issuerKeyHash="f51deef9e7d15722ea16e03220a535282278d2f7" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>3+eRn0pbkwZ+j0FgnfA48IYngNvoW3rOgElOz2DMJYY=</DigestValue></Reference></SignedInfo><SignatureValue>LRnz76A4ioVpwRLXVKZ1MwVY/uDfwAIch2nVJ9h9If5iY4lcwTaI5Cp8VfOVI6FFHIWtT7wmbQFeWyZGFC0HgSAcfr/Fdb8GkGEl5JO7MPYDYKNpCnRPbIUXjDLBTBHc8QZ5gs7r3TYYQvfJqDBaiE5jr7YENhF6gO40+n17/m4=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>ooxEQcQq9lnPKyh4N7iBIXeHis1D2sTAwrFJ4oRsYCX/o2FjLofxYxTH1LGSH8PoVHSrLPcsucXCDEzJq7LojIskXFz65FYnJf1GaKi+gMRAW7IgW72Vb0Xw/L9A9FTPXflofsyTymyIxIFzYDCEF36P5P4YG7vFxCj/oFFPCqk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="8625cc60cf4e4980ce7a5be8db802786f038f09d60418f7e06935b4a9f91e7df" Description="" Url=""><as:assemblyIdentity name="MetaMarkets Toolkit.exe" version="1.0.0.6" publicKeyToken="87b9fbfba03c9e7f" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-LFJ7BK9\Admin</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>p1alNWOmgRCEJnwtMqoOHWoVmwMjcQ5RXH0gaJ5o7cg=</DigestValue></Reference></SignedInfo><SignatureValue>DvSvETTVhXcPKOPk5rM8tG4asZ+Ptz+HaEeCGNJd9TOe4GQb/dz8TH3MOJqKqydthXdufzbWXbhgw1eZHgcYKHC1KCnSZAC2rrFGO8aRqmhBab0zvEauDHp8pJciwPgLv/JK3n1lZCgfYuUfWRzVQG/g0rEMXY+WBlak2XDWpd8=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>ooxEQcQq9lnPKyh4N7iBIXeHis1D2sTAwrFJ4oRsYCX/o2FjLofxYxTH1LGSH8PoVHSrLPcsucXCDEzJq7LojIskXFz65FYnJf1GaKi+gMRAW7IgW72Vb0Xw/L9A9FTPXflofsyTymyIxIFzYDCEF36P5P4YG7vFxCj/oFFPCqk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQN+4ycR1AwZ5L6y/HkUV66DANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAEwARgBKADcAQgBLADkAXABBAGQAbQBpAG4wHhcNMjUxMTA1MDg0MDA1WhcNMjYxMTA1MTQ0MDA1WjA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAEwARgBKADcAQgBLADkAXABBAGQAbQBpAG4wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAKKMREHEKvZZzysoeDe4gSF3h4rNQ9rEwMKxSeKEbGAl/6NhYy6H8WMUx9Sxkh/D6FR0qyz3LLnFwgxMyauy6IyLJFxc+uRWJyX9RmiovoDEQFuyIFu9lW9F8Py/QPRUz135aH7Mk8psiMSBc2AwhBd+j+T+GBu7xcQo/6BRTwqpAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAB7s+ERhDrCU7B4SKccJWMe1RtDwYWlC+NGA8eBdHKH3DP95THuD5K5bVJnLybAM2/X+h9dKHXu4dE8wW+PNOQKdZ4WurJj0Fj48pP8G3Mi8/1/P3fXxje63RNXR5d5l4Z2Xmfxb7bU1023YuVmYqhZ/K8T1gxS2BtKAozuj4Idc=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
